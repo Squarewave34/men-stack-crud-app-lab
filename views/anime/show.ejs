@@ -7,7 +7,15 @@
   </head>
   <body>
     <h1><%= anime.name%></h1>
+
+    <h3><%= anime.description %></h3>
+    <h4>by: <%= anime.mangaka %></h4>
+    <h4>produced by: <%= anime.productionCompany %></h4>
+    <h4>following the main lead <%= anime.mainCharacter %></h4>
     <a href="/anime">go back</a>
+
+    <br>
+
     <a href="/anime/<%= anime._id %>/edit">Edit <%= anime.name %></a>
 
     <br>
