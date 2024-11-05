@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new</title>
+  </head>
+  <body>
+    <h1>Add a new anime!</h1>
+
+    <form action="/anime" method="POST">
+      <label for="name">Name of the anime: </label>
+      <input type="text" name="name" id="name">
+
+      <br>
+      <br>
+
+      <label for="desc">Description of the anime: </label>
+      <input type="text" name="description" id="desc">
+
+      <br>
+      <br>
+
+      <label for="mc">Main character name: </label>
+      <input type="text" name="mainCharacter" id="mc">
+
+      <br>
+      <br>
+
+      <label for="company">Name of production company: </label>
+      <input type="text" name="productionCompany" id="company">
+
+      <br>
+      <br>
+
+      <label for="mangaka">Name of mangaka: </label>
+      <input type="text" name="mangaka" id="mangaka">
+
+      <br>
+      <br>
+
+      <button type="submit">Add Anime</button>
+    </form>
+
+    <br>
+
+    <a href="/anime">back to anime list</a>
+  </body>
+</html>

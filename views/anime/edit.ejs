@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit page</title>
+  </head>
+
+  <body>
+    <h1>Edit <%= anime.name %></h1>
+
+    <form action="/anime/<%=anime._id%>?_method=PUT" method="POST">
+      <label for="name">Name of the anime: </label>
+      <input type="text" name="name" value="<%= anime.name %>">
+
+      <br>
+      <br>
+
+      <label for="desc">Description of the anime: </label>
+      <input type="text" name="description" value="<%= anime.description %>">
+
+      <br>
+      <br>
+
+      <label for="mc">Main character name: </label>
+      <input type="text" name="mainCharacter" value="<%= anime.mainCharacter %>">
+
+      <br>
+      <br>
+
+      <label for="company">Name of production company: </label>
+      <input type="text" name="productionCompany" value="<%= anime.productionCompany %>">
+
+      <br>
+      <br>
+
+      <label for="mangaka">Name of mangaka: </label>
+      <input type="text" name="mangaka" value="<%= anime.mangaka %>">
+
+      <br>
+      <br>
+
+      <button type="submit">Update Anime</button>
+    </form>
+
+    <br>
+
+    <a href="/anime">Back to anime list</a>
+  </body>
+  
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= anime.name%></title>
+  </head>
+  <body>
+    <h1><%= anime.name%></h1>
+    <a href="/anime">go back</a>
+    <a href="/anime/<%= anime._id %>/edit">Edit <%= anime.name %></a>
+
+    <br>
+    <br>
+
+    <form action="/anime/<%=anime._id%>?_method=DELETE" method="POST">
+      <button type="submit">Delete <%= anime.name %></button>
+    </form>
+  </body>
+</html>
